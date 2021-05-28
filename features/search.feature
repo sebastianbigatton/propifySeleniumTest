@@ -18,7 +18,7 @@ Feature: Search
 
   @RestApiTest
   Scenario: Verify rest api call
-    When GET request is performed to 'https://api64.ipify.org/?format=json'
+    When GET request is performed to "https://api64.ipify.org/?format=json"
     Then Response matches with
     """
     {"ip":"181.29.203.214"}
