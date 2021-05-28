@@ -15,3 +15,11 @@ Feature: Search
     When Test data from "test_data/person.json" is populated to Person table
     Then Print all records in PERSON table
     And Database connection is closed
+
+  @RestApiTest
+  Scenario: Verify rest api call
+    When GET request is performed to 'https://api64.ipify.org/?format=json'
+    Then Response matches with
+    """
+    {"ip":"181.29.203.214"}
+    """
