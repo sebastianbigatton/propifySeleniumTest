@@ -10,4 +10,4 @@
 8) Clone repository: git clone https://github.com/sebastianbigatton/propifySeleniumTest.git
 9) Run tests: enter into project folder and run "behave"
 
-<img width="899" alt="Screen Shot 2021-05-28 at 16 45 59" src="https://user-images.githubusercontent.com/10636712/120034983-3e0ddd00-bfd4-11eb-8ca7-aeacda92d2cb.png">
+<img width="1027" alt="Screen Shot 2021-05-28 at 20 18 28" src="https://user-images.githubusercontent.com/10636712/120049956-0e6dcd80-bff2-11eb-8083-9bbebae22712.png">
