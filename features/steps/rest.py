@@ -1,4 +1,5 @@
 import requests
+import json
 from behave import given, when, then
 
 
@@ -12,7 +13,8 @@ def get_request(context, url):
 def verify_response(context):
     fail_msg = 'Response is not the expected! Expected: {}, Obtained: {}'
     fail_msg = fail_msg.format(context.text, context.response)
-    assert context.response == context.text, fail_msg
+    expected = json.loads(context.text)
+    assert context.response == expected, fail_msg
 
 
 def _parse_json(response):
