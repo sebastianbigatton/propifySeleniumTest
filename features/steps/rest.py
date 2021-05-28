@@ -8,7 +8,7 @@ def get_request(context, url):
     context.response = _parse_json(response)
 
 
-@then('Response matches with')
+@then(u'Response matches with')
 def verify_response(context):
     fail_msg = 'Response is not the expected! Expected: {}, Obtained: {}'
     fail_msg = fail_msg.format(context.text, context.response)
